@@ -1,0 +1,22 @@
+{
+  "name": "fisherSupply_website",
+  "authors": [
+    "Jesus Soto"
+  ],
+  "description": "This is the web site of fisher supply, built in MEAN stack",
+  "main": "app.js",
+  "keywords": [
+    "website",
+    "mean"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
