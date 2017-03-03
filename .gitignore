@@ -3,6 +3,6 @@ node_modules
 bower_components
 test
 tests
-*.jpg
-*.png
-*.gif
+#*.jpg
+#*.png
+#*.gif
