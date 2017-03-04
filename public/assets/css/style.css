@@ -186,6 +186,10 @@ textarea {
     display: inline-block;
 }
 
+.map iframe {
+    border: 5px solid white;
+}
+
 /*
 footer wrapper
 */
