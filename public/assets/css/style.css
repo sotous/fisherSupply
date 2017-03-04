@@ -3,130 +3,232 @@ Intro head
 */
 
 #intro-head {
-  padding: 80px 0;
-  color: white;
+    padding: 80px 0;
+    color: white;
 }
 
 #intro-head h1,
 #intro-head .lead {
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .main-bar {
-  width: 90%;
-  margin: 0 auto;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .top-bar,
 .top-bar ul {
-  background: transparent;
+    background: transparent;
 }
 
 .top-bar-right .menu {
-  margin-top: 15px;
+    margin-top: 15px;
 }
 
 .top-bar-right .menu a {
-  color: white;
+    color: white;
 }
 
 .main-bg {
-  background: url("../images/header-bg.jpg") top center;
+    background: url("../images/header-bg.jpg") top center;
+    background-attachment: fixed;
 }
+
 
 /*
 Brands we sell
 */
 
 #brands {
-  background: #001123;
-  color: #AAAFB4;
-  padding: 20px 0;
-}
-
-#brands .title {
-  margin-bottom: 20px;
+    /*    background: #001123;*/
+    /*    background: #007CFF;*/
+    background: #FFA100;
+    color: white;
+    padding: 20px 0;
 }
 
 #brands ul {
-  padding: 10px 0;
+    padding: 10px 0;
 }
 
 #brands ul li {
-  list-style-type: none;
-  display: inline-block;
-  margin: 0 25px;
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 25px;
 }
 
 #brands ul li > img {
     max-height: 19px;
 }
 
+
 /*
 parts for
 */
 
 #parts-for {
-  padding: 40px 0;
+    padding: 60px 0 80px;
 }
+
 
 /*
 We also
 */
 
 #we-also {
-  background: url("../images/we-also.jpg") center no-repeat;
-  color: white;
-  height: 690px;
+    background: url("../images/we-also.jpg") center no-repeat;
+    background-attachment: fixed;
+    color: white;
+    height: 690px;
 }
 
 .we-also-inner {
-  height: 690px;
-  position: relative;
+    height: 690px;
+    position: relative;
 }
 
 .we-also-inner p {
-  text-align: justify;
+    text-align: justify;
 }
 
 .we-also-inner .center-vertically {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
 
 /*
 distribuitors
 */
 
 #distribuitors .distribuitors {
-  padding: 80px 0;
+    padding: 80px 0;
 }
 
-#distribuitors .distribuitors p{
-  text-align: justify;
+#distribuitors .distribuitors p {
+    text-align: justify;
 }
 
 #distribuitors .distribuitors .distribuitors-logo {
-  margin-top: 40px;
+    margin-top: 40px;
+}
+
+
+/*
+about us
+*/
+
+.about-us-wrapper {
+    color: white;
+    /*    background: #007CFF;*/
+    background: #FFA100;
+    padding: 80px 0;
+}
+
+
+/*
+contact us
+*/
+
+.contact-us-wrapper {
+    background: #1989FF url("../images/contact-us.jpg") center no-repeat;
+    color: #fff;
+}
+
+.contact-us {
+    padding: 80px 0;
+}
+
+
+/*
+contact form
+*/
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 20px;
+}
+
+textarea {
+    height: 150px;
+}
+
+.text-right input[type="submit"] {
+    margin-right: 0;
+}
+
+.contact-form .contact-info p {
+    margin-bottom: 0;
+}
+
+.contact-form .contact-info .contact-blocks {
+    margin-bottom: 10px;
+}
+
+.contact-form .contact-info .contact-blocks .contact-icon {
+    vertical-align: super;
+    margin-right: 10px;
+}
+
+.contact-form .contact-info .contact-blocks .contact-details {
+    height: 60px;
+    vertical-align: middle;
+}
+
+.contact-form .contact-info .contact-blocks .contact-icon .icon {
+    font-size: 2rem;
+}
+
+.contact-form .contact-info .contact-blocks > div {
+    display: inline-block;
+}
+
+/*
+footer wrapper
+*/
+
+.footer-wrapper {
+    background: #001123;
+    color: white;
+    padding: 20px 0;
+    font-size: 0.8rem;
+}
+
+.footer-wrapper p{
+    margin: 0;
+    opacity: 0.5;
+}
+
+.footer-wrapper a{
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 /**/
 
 .title-block {
-  padding: 50px 0 0;
+    padding: 50px 0 0;
 }
+
+.title {
+    margin-bottom: 40px;
+}
+
 
 /*
 Buttons
 */
 
-.button.blue{
-  background: #008BF3;
+.button.blue {
+    background: #008BF3;
 }
 
 .round {
-  -webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
