@@ -1,3 +1,11 @@
+h1,h2,h3,h4,h5 {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 /*
 Intro head
 */
@@ -134,6 +142,7 @@ contact us
 
 .contact-us-wrapper {
     background: #1989FF url("../images/contact-us.jpg") center no-repeat;
+    background-attachment: fixed;
     color: #fff;
 }
 
@@ -150,6 +159,7 @@ input[type="text"],
 input[type="email"],
 textarea {
     padding: 20px;
+    border: none;
 }
 
 textarea {
@@ -212,7 +222,9 @@ footer wrapper
     font-weight: bold;
 }
 
-/**/
+/*
+titles
+*/
 
 .title-block {
     padding: 50px 0 0;
@@ -235,4 +247,15 @@ Buttons
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+}
+
+/*
+animations
+*/
+
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
 }

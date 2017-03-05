@@ -7,6 +7,8 @@
     <title>Fisher Supply</title>
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+    <link href="assets/css/animate.css" rel='stylesheet' type='text/css'>
     <link href="assets/css/style.css" rel='stylesheet' type='text/css'>
     <link href="assets/foundation-icons/foundation-icons.css" rel='stylesheet' type='text/css'>
 
@@ -31,7 +33,7 @@
             </div>
         </div>
 
-        <div id="intro-head">
+        <div id="intro-head" class="animate-bounce">
             <div class="row column text-center">
                 <h1>Heavy Machinery & Parts</h1>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
@@ -44,7 +46,7 @@
         <div class="row">
             <div class="medium-12 text-center">
                 <h5 class="title">Brands We Sell</h5>
-                <ul>
+                <ul class="animate-slide">
                     <li>
                         <img src="assets/images/brands/terex.png" />
                     </li>
@@ -75,7 +77,7 @@
         <h3>We Sell Parts For...</h3>
     </div>
 
-    <div class="row" id="parts-for">
+    <div class="row animate-bounce" id="parts-for">
         <div class="medium-4 columns">
             <img class="thumbnail" src="assets/images/categories/cranes.jpg">
             <h3 class="text-center">Cranes</h3>
@@ -91,7 +93,7 @@
     </div>
 
     <div id="we-also">
-        <div class="row">
+        <div class="row animate-bounce">
             <div class="medium-6 column text-center">
                 <div class="we-also-inner">
                     <div class="center-vertically">
@@ -113,7 +115,7 @@
     </div>
 
     <div id="distribuitors">
-        <div class="row">
+        <div class="row animate-bounce">
             <div class="medium-6 column">
                 <div class="distribuitors">
                     <h3>Salt Away Distribuitors</h3>
@@ -135,7 +137,7 @@
     </div>
 
     <div id="about-us" class="about-us-wrapper">
-        <div class="about-us row column text-center">
+        <div class="about-us row column text-center animate-bounce">
             <h2 class="title">About Us</h2>
             <div class="text-justify">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia tellus in libero bibendum tristique. Quisque a blandit diam. Phasellus eu ligula eu mi rhoncus hendrerit a at libero. Sed libero nunc, dictum nec pharetra sed, elementum vel purus. Aenean venenatis odio massa, in ultricies justo finibus eget. Proin vel lacus mi. Fusce et metus sollicitudin, rutrum orci eu, tincidunt nunc. Donec ornare rhoncus lacinia.</p>
@@ -148,7 +150,7 @@
     </div>
 
     <div id="contact-us" class="contact-us-wrapper">
-        <div class="contact-us row column text-center">
+        <div class="contact-us row column text-center animate-swing">
             <h2 class="title">Contact us</h2>
             <div class="contact-form">
                 <form>
@@ -224,6 +226,7 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/jquery.viewportchecker.min.js"></script>
     <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
     <script>
         $(document).foundation();
@@ -239,6 +242,22 @@
                         return false;
                     }
                 }
+            });
+        });
+        $(document).ready(function () {
+            $('.animate-bounce').addClass("hidden").viewportChecker({
+                classToAdd: 'visible animated bounceIn',
+                offset: 200
+            });
+            
+            $('.animate-slide').addClass("hidden").viewportChecker({
+                classToAdd: 'visible animated slideInLeft',
+                offset: 100
+            });
+            
+            $('.animate-swing').addClass("hidden").viewportChecker({
+                classToAdd: 'visible animated swing',
+                offset: 200
             });
         });
     </script>
