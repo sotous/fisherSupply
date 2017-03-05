@@ -16,8 +16,13 @@
 
 <body ng-app="fisherApp">
     <div class="main-bg">
-        <div class="top-bar main-bar">
-            <div class="top-bar-left">
+        <div class="title-bar mobile-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+            <img src="assets/images/fisherlogow.png" width="120" />
+            <button class="menu-icon" type="button" data-toggle="main-menu" class="float:right;"></button>
+            <div class="title-bar-title"></div>
+        </div>
+        <div id="main-menu" class="row column top-bar main-bar title-bar">
+            <div class="top-bar-left show-for-medium">
                 <ul class="menu">
                     <li class="menu-text"><img src="assets/images/fisherlogow.png" width="200" /></li>
                 </ul>
@@ -33,7 +38,7 @@
             </div>
         </div>
 
-        <div id="intro-head" class="animate-bounce">
+        <div id="intro-head" class="animate-bounce-start">
             <div class="row column text-center">
                 <h1>Heavy Machinery & Parts</h1>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
@@ -44,31 +49,28 @@
 
     <div id="brands">
         <div class="row">
-            <div class="medium-12 text-center">
-                <h5 class="title">Brands We Sell</h5>
-                <ul class="animate-slide">
-                    <li>
+            <div class="medium-12 columns text-center">
+                <h5>Brands We Sell</h5>
+                <div class="row animate-slide">
+                    <div class="brand small-4 medium-2 columns">
                         <img src="assets/images/brands/terex.png" />
-                    </li>
-                    <li>
+                    </div>
+                    <div class="brand small-4 medium-2 columns">
                         <img src="assets/images/brands/terex.png" />
-                    </li>
-                    <li>
+                    </div>
+                    <div class="brand small-4 medium-2 columns">
                         <img src="assets/images/brands/terex.png" />
-                    </li>
-                    <li>
+                    </div>
+                    <div class="brand small-4 medium-2 columns">
                         <img src="assets/images/brands/terex.png" />
-                    </li>
-                    <li>
+                    </div>
+                    <div class="brand small-4 medium-2 columns">
                         <img src="assets/images/brands/terex.png" />
-                    </li>
-                    <li>
+                    </div>
+                    <div class="brand small-4 medium-2 columns">
                         <img src="assets/images/brands/terex.png" />
-                    </li>
-                    <li>
-                        <img src="assets/images/brands/terex.png" />
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -97,7 +99,7 @@
             <div class="medium-6 column text-center">
                 <div class="we-also-inner">
                     <div class="center-vertically">
-                        <img src="assets/images/construction-safety.png" alt="" style="width:50%; " />
+                        <img src="assets/images/construction-safety.png" alt="" style="width:30%; " />
                     </div>
                 </div>
             </div>
@@ -116,21 +118,21 @@
 
     <div id="distribuitors">
         <div class="row animate-bounce">
-            <div class="medium-6 column">
-                <div class="distribuitors">
-                    <h3>Salt Away Distribuitors</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum ex at dapibus facilisis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum porta tortor et dui auctor, non vehicula dolor mattis. Quisque id justo aliquam, interdum velit vehicula, viverra ante.
-                    </p>
-                </div>
-            </div>
-            <div class="medium-6 column">
+           <div class="medium-6 medium-push-6 column">
                 <div class="distribuitors">
                     <div class="medium-8 column end">
                         <div class="distribuitors-logo">
                             <img src="assets/images/salt-away.png" alt="" />
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="medium-6 medium-pull-6 column">
+                <div class="distribuitors">
+                    <h3>Salt Away Distribuitors</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum ex at dapibus facilisis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum porta tortor et dui auctor, non vehicula dolor mattis. Quisque id justo aliquam, interdum velit vehicula, viverra ante.
+                    </p>
                 </div>
             </div>
         </div>
@@ -154,21 +156,21 @@
             <h2 class="title">Contact us</h2>
             <div class="contact-form">
                 <form>
-                    <div class="row">
+                    <div class="">
                         <div class="medium-12 columns">
                             <h4 class="title text-left">Getting in touch is easy!</h4>
                         </div>
                         <div class="medium-5 columns">
-                            <div class="row columns">
+                            <div>
                                 <input type="text" placeholder="Your name">
                             </div>
-                            <div class="row columns">
+                            <div>
                                 <input type="email" placeholder="Your email">
                             </div>
-                            <div class="row columns">
+                            <div>
                                 <textarea placeholder="Your message"></textarea>
                             </div>
-                            <div class="row columns text-right">
+                            <div class="text-right">
                                 <input type="submit" value="Send!" class="button blue round large" />
                             </div>
                         </div>
@@ -250,15 +252,21 @@
                 offset: 200
             });
             
+            $('.animate-bounce-start').viewportChecker({
+                classToAdd: 'visible animated bounceIn',
+                offset: 100
+            });
+
             $('.animate-slide').addClass("hidden").viewportChecker({
                 classToAdd: 'visible animated slideInLeft',
                 offset: 100
             });
-            
+
             $('.animate-swing').addClass("hidden").viewportChecker({
                 classToAdd: 'visible animated swing',
                 offset: 200
             });
+            
         });
     </script>
     <script type="text/javascript" src="https://intercom.zurb.com/scripts/zcom.js"></script>

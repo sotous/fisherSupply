@@ -21,8 +21,20 @@ Intro head
 }
 
 .main-bar {
-    width: 90%;
+/*    width: 90%;*/
     margin: 0 auto;
+/*    display: none;*/
+}
+
+.main-bg .title-bar {
+    position: relative;
+}
+
+.menu-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2%;
 }
 
 .top-bar,
@@ -56,18 +68,12 @@ Brands we sell
     padding: 20px 0;
 }
 
-#brands ul {
-    padding: 10px 0;
-}
-
-#brands ul li {
-    list-style-type: none;
-    display: inline-block;
-    margin: 0 25px;
-}
-
-#brands ul li > img {
+#brands img {
     max-height: 19px;
+}
+
+#brands .brand {
+    padding: 20px 0;
 }
 
 
@@ -88,24 +94,19 @@ We also
     background: url("../images/we-also.jpg") center no-repeat;
     background-attachment: fixed;
     color: white;
-    height: 690px;
+}
+
+#we-also > div {
+    padding: 150px 0;
 }
 
 .we-also-inner {
-    height: 690px;
     position: relative;
 }
 
 .we-also-inner p {
     text-align: justify;
 }
-
-.we-also-inner .center-vertically {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 
 /*
 distribuitors
@@ -258,4 +259,51 @@ animations
 }
 .visible{
      opacity:1;
+}
+
+button, a {
+    outline: none;
+}
+
+/*
+media queries
+*/
+
+@media only screen and (max-width: 40em) {
+    
+    .main-bg,
+    #we-also,
+    .contact-us-wrapper{
+        background-size: cover;
+    }
+    
+    .we-also-inner img {
+        margin-bottom: 60px;
+    }
+    
+    #main-menu {
+        position: relative;
+    }
+    
+    .top-bar-right .menu {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 60%;
+        background: rgba(0,17,35,0.95);
+        z-index: 99;
+        margin-top: 47px;
+    }
+    
+    .top-bar-right .menu li {
+        display: block;
+        padding: 10px 0 10px 10px;
+    }
+    
+    .title-bar.mobile-bar {
+    background: #001123;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    }
 }
